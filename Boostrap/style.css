@@ -1,0 +1,34 @@
+.container-column{
+    position: relative;
+    background-color: rgb(224, 224, 224);
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 5px;
+}
+.container-column .container_IMG{
+    border-radius: 30px;
+    margin:10px ;
+}
+.container-column .overlay{
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    border-radius: 30px;
+    transition: opacity 0.5s ease-in-out;
+    background-color: #000;
+    cursor: pointer;
+}
+.container-column .overlay .content{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    font-size: 20px;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+.container-column:hover .overlay {
+    opacity: 0.7;
+}
